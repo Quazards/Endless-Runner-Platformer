@@ -4215,10 +4215,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawner
       objectReference: {fileID: 0}
-    - target: {fileID: 5091137148255105930, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6415824313972962832, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.36551
@@ -4260,17 +4256,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: objectSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: spawnableObjects.Array.size
+      propertyPath: spawnTime
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: spawnableObjects.Array.data[1]
+      propertyPath: spawnableObjects.Array.data[0]
       value: 
       objectReference: {fileID: 2748534600749710975, guid: c508779f3d316664e9f0a4a581c9a9e4, type: 3}
+    - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
+      propertyPath: spawnableObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 4602980099434200990, guid: f1de8b81eecb3624eb6fcdc573ec502c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4985,29 +4981,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: spawnTime
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: objectSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: spawnableObjects.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: spawnableObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 118067553573030015, guid: b7b6cc1e5ec279d41b242fdd3729eb2d, type: 3}
-    - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
       propertyPath: spawnableObjects.Array.data[1]
       value: 
       objectReference: {fileID: 5423490217635083055, guid: 8e488ebda14594d4fb9da7420d6ee81c, type: 3}
-    - target: {fileID: 7756627805618060089, guid: d7de5ecd97099714aa749226fef2f8c3, type: 3}
-      propertyPath: spawnableObjects.Array.data[2]
-      value: 
-      objectReference: {fileID: 4602980099434200990, guid: f1de8b81eecb3624eb6fcdc573ec502c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

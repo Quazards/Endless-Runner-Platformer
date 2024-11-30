@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public float difficultyFactor = 1f;
-    [SerializeField] private float scalingTime;
+    [SerializeField] private float scalingTime = 2f;
 
     private void Awake()
     {
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator DifficultyScaling()
     {
-        difficultyFactor++;
         yield return new WaitForSeconds(scalingTime);
+        difficultyFactor++;
     }
 }

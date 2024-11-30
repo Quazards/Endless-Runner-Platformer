@@ -16,8 +16,6 @@ public class EnemyAttack : MonoBehaviour
                 var health = collision.gameObject.GetComponent<Health>();
 
                 health.TakeDamage(enemyDamageAmount);
-
-                Debug.Log("Attacking player");
             }
         }
     }

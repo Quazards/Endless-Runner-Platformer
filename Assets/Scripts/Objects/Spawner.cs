@@ -9,13 +9,10 @@ public class Spawner : MonoBehaviour
     public float spawnTime = 2f;
     public float objectSpeed = 2f;
 
-    private void Awake()
-    {
-        _gameManager = GameManager.Instance;
-    }
-
     private void Start()
     {
+        _gameManager = GameManager.Instance;
+
         StartCoroutine(SpawnCoroutine());
     }
 
@@ -27,12 +24,16 @@ public class Spawner : MonoBehaviour
 
             yield return new WaitForSeconds(spawnTime);
 
-            if (spawnTime >= 0.5)
+            if (_gameManager != null)
             {
-                spawnTime -= _gameManager.difficultyFactor / 100;
-            }
 
-            objectSpeed += _gameManager.difficultyFactor / 10;
+                if (spawnTime >= 0.5)
+                {
+                    spawnTime -= _gameManager.difficultyFactor / 100;
+                }
+
+                objectSpeed += _gameManager.difficultyFactor / 10;
+            }
         }
     }
 
